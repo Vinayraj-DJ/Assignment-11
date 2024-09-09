@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tooltip</title>
+    <style>
+    .tooltip{
+        position: relative;
+        display: inline-block;
+        font-size:auto;
+        margin-top:-100px;
+    }
+    .tooltip .tooltiptext{
+        visibility: hidden;
+        height: 33px;
+        width: 300px;
+        background-color: black;
+        color: azure;
+        text-align: center;
+        border-radius: 2px;
+        padding: 5px 0;
+
+        position: absolute;
+        z-index: 1;
+        top:100%;
+        left: 50%;
+        margin-left: -60px;
+
+    }
+    .tooltip:hover .tooltiptext{
+        visibility: visible;
+    }
+    html{
+         background: grey;
+     }
+     body{
+         background:white;
+         height:800px;
+         width:800px;
+         margin:30px auto;
+     }
+     .row{
+         width:100%;
+         height: 100px;
+         float: left;
+     }
+     .box{
+         height:100px;
+         width: 100px;
+         float: left;
+         font-size:70px;
+         text-align: center;
+         color:orangered;
+     }
+     .box:hover{
+         background:red;
+     }
+     .black{
+         background: black;
+     }
+</style>
+</head>
+<body style="text-align: center;">
+    <h2>Hover over me
+    
+        <div class="tooltip">
+            <form class="form">
+                <input type="text">
+            </form>
+            <span class="tooltiptext">This is the required field</span>
+        </div>
+    </h2> <br><br>
+
+ <h1>Chess Board</h1>     
+ <body>
+     <div class="row">
+         <div class="box">&#9814</div>
+         <div class="box black">  &#9816</div>
+         <div class="box"> &#9821</div>
+         <div class="box black">&#9818</div>
+         <div class="box">&#9819</div>
+         <div class="box black">&#9821</div>
+         <div class="box"> &#9816</div>
+         <div class="box black">&#9814</div>
+     </div>
+     <div class="row">
+         <div class="box black">&#9823</div>
+         <div class="box">&#9823</div>
+         <div class="box black">&#9823</div>
+         <div class="box">&#9823</div>
+         <div class="box black">&#9823</div>
+         <div class="box">&#9823</div>
+         <div class="box black">&#9823</div>
+         <div class="box">&#9823</div>
+     </div>
+     <div class="row">
+         <div class="box"></div>
+         <div class="box black"></div>
+         <div class="box"></div>
+         <div class="box black"></div>
+         <div class="box"></div>
+         <div class="box black"></div>
+         <div class="box"></div>
+         <div class="box black"></div>
+     </div>
+     <div class="row">
+         <div class="box black"></div>
+         <div class="box"></div>
+         <div class="box black"></div>
+         <div class="box"></div>
+         <div class="box black"></div>
+         <div class="box"></div>
+         <div class="box black"></div>
+         <div class="box"></div>
+     </div>
+     <div class="row">
+         <div class="box"></div>
+         <div class="box black"></div>
+         <div class="box"></div>
+         <div class="box black"></div>
+         <div class="box"></div>
+         <div class="box black"></div>
+         <div class="box"></div>
+         <div class="box black"></div>
+     </div>
+     <div class="row">
+         <div class="box black"></div>
+         <div class="box"></div>
+         <div class="box black"></div>
+         <div class="box"></div>
+         <div class="box black"></div>
+         <div class="box"></div>
+         <div class="box black"></div>
+         <div class="box"></div>
+     </div>
+     <div class="row">
+     <div class="box">&#9823</div>
+     <div class="box black">&#9823</div>
+         <div class="box">&#9823</div>
+         <div class="box black">&#9823</div>
+         <div class="box">&#9823</div>
+         <div class="box black">&#9823</div>
+         <div class="box">&#9823</div>
+         <div class="box black">&#9823</div>
+     </div>
+     <div class="row">
+         <div class="box black">&#9814</div>
+         <div class="box"> &#9816</div>
+         <div class="box black"> &#9821</div>
+         <div class="box">&#9819</div>
+         <div class="box black">&#9818</div>
+         <div class="box">&#9821</div>
+         <div class="box black">&#9816</div>
+         <div class="box">&#9814</div>
+     </div>
+ </body>
+ </html>
+</body>
+</html>
